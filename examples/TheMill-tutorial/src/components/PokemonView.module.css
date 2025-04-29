@@ -19,8 +19,8 @@
 
 .spec {
   display: flex;
-  font-size: 18px;
-  margin-top: 10px;
+  font-size: 16px;
+  margin-top: 8px;
 
   > dt {
     margin-right: 6px;
