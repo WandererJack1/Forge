@@ -1,0 +1,51 @@
+{
+  "name": "TheMill-react-vite-plugin",
+  "version": "0.19.4",
+  "description": "Plugin for the TheMill's file system router. TheMill is the react/rust fullstack framework",
+  "homepage": "https://TheMill.dev",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "lint": "eslint .",
+    "format": "prettier --check --ignore-unknown --ignore-path ../../.prettierignore .",
+    "format:fix": "prettier --write --ignore-unknown --ignore-path ../../.prettierignore .",
+    "typecheck": "tsc --noEmit",
+    "test:watch": "vitest",
+    "test": "vitest run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheJackMan33/TheMill.git",
+    "directory": "packages/TheMill-react-vite-plugin"
+  },
+  "keywords": [],
+  "author": "Valerio Ageno",
+  "license": "MIT",
+  "type": "module",
+  "types": "dist/esm/index.d.ts",
+  "main": "dist/esm/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/esm/index.d.ts",
+      "default": "./dist/esm/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/types": "^7.24.0",
+    "prettier": "^3.2.4",
+    "vite": "^6.1.1"
+  },
+  "devDependencies": {
+    "@types/babel__core": "7.20.5",
+    "vite-config": "workspace:*",
+    "vitest": "3.1.1"
+  }
+}
