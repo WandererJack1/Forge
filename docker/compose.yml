@@ -22,6 +22,5 @@ services:
       - /TheMill/examples/TheMill-app/target
       - /TheMill/examples/TheMill-tutorial/node_modules
       - /TheMill/examples/TheMill-tutorial/target
-      - /TheMill/examples/with-mdx/node_modules
       - /TheMill/examples/with-mdx/target
     tty: true
