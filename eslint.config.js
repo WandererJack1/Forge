@@ -13,7 +13,6 @@ const JS_EXTENSIONS_MATCH = [
   'cjs',
   'jsx',
   'mjsx',
-  'ts',
   'tsx',
   'mtsx',
 ].join(',')
