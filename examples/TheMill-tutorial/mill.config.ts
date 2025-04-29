@@ -5,7 +5,6 @@ const config: TheMillConfig = {
     alias: {
       '@': 'src',
     },
-  },
 }
 
 export default config
