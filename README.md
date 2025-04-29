@@ -1,6 +1,3 @@
-[Documentation](https://TheMill.dev) | [Tutorial](https://TheMill.dev/documentation/tutorial) |
-[Discord](https://discord.com/invite/khQzPa654B) | [✨Contributing](https://TheMill.dev/documentation/contributing)
-
 # TheMill
 
 
@@ -22,11 +19,6 @@ Some of its features are:
 - 🍭 CSS/SCSS modules
 - 🧬 Server Side Rendering
 - 🔥 Hot Module Reload
-
-## Documentation
-
-The [documentation](https://TheMill.dev/) is available on
-[TheMill.dev](https://TheMill.dev/).
 
 ## Installation
 
