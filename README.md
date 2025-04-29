@@ -7,8 +7,8 @@
 **TheMill is a full-stack web framework for building React applications using Rust as the backend with
 a strong focus on usability and performance.**
 
-TheMill (Italian word for "thunder", pronounced /2 Oh No/).
-Why TheMill? Just a badass name.
+The Mill Project
+Why The Mill? Because we are grinding complexity into modern simplicity.
 
 If you have experience with [Next.js](https://nextjs.org/) you will feel home here.
 
