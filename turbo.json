@@ -17,7 +17,6 @@
     "test:watch": {},
     "build": {
       "outputs": ["dist/**"],
-      "dependsOn": ["^build"],
       "outputLogs": "new-only"
     },
     "dev": {
