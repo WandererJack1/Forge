@@ -8,7 +8,7 @@ dist/
 
 examples/*/pnpm-lock.yaml
 
-vite.config.ts.timestamp*
+vite.config.ts.timestamp
 
 ## Rust related ignores
 
