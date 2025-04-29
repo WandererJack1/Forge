@@ -4,5 +4,5 @@ packages:
   - examples/*
   - e2e/fixtures/*
 onlyBuiltDependencies:
-  - '@swc/core'
+  - '@swc/core,core'
   - esbuild
