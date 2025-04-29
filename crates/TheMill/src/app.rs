@@ -259,7 +259,7 @@ mod tests {
     #[test]
     fn should_collect_routes() {
         let mut app = App::new();
-        #[cfg(target_os = "windows")]
+        #cfg(target_os = "windows")
         let base_path = "\\home\\user\\Documents\\TheMill";
 
         #[cfg(not(target_os = "windows"))]
