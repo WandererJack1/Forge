@@ -1,0 +1,13 @@
+[package]
+name = "with-mdx"
+version = "0.0.1"
+edition = "2024"
+
+[[bin]]
+name = "TheMill"
+path = ".TheMill/main.rs"
+
+[dependencies]
+TheMill_lib = { path = "../../crates/TheMill_lib/" }
+serde = { version = "1.0.202", features = ["derive"] }
+
