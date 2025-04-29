@@ -6,5 +6,5 @@ examples/** linguist-documentation
 *.tsx linguist-detectable=true
 *.ts linguist-detectable=true
 *.rs linguist-detectable=true 
-*.html linguist-detectable=false  
+*.html linguist-detectable=true 
 *.sh linguist-detectable=false
