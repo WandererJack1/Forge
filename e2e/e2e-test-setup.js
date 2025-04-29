@@ -1,5 +1,4 @@
 import { execSync } from 'child_process'
-import path from 'path'
 
 const __dirname = import.meta.dirname
 const rootDir = path.join(__dirname, '..')
