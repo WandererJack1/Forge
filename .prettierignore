@@ -1,0 +1,11 @@
+pnpm-lock.yaml
+
+dist
+.TheMill
+out
+
+vite.config.ts.timestamp-*
+
+packages/TheMill-lazy-fn-vite-plugin/tests/sources/*
+
+e2e/fixtures/*/test-results

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    // Typechecking
+    "strict": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitReturns": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noUncheckedIndexedAccess": true,
+
+    // Modules
+    "module": "ES2022",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+
+    // Emit
+    "noEmit": true,
+    "declaration": true,
+
+    // JavaScript Support
+    "allowJs": true,
+    "checkJs": true,
+
+    // Interop Constraints
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // Language and Environment
+    "target": "ES2020",
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+
+    // Completeness
+    "skipLibCheck": true
+  }
+}

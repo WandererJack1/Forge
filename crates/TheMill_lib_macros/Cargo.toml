@@ -1,0 +1,22 @@
+[package]
+name = "TheMill_lib_macros"
+version = "0.19.4"
+edition = "2024"
+description = "Superfast React fullstack framework"
+homepage = "https://TheMill.dev"
+keywords = [ "react", "typescript", "fullstack", "web", "ssr"]
+repository = "https://github.com/TheJackMan33/TheMill"
+readme = "../../README.md"
+license-file = "../../LICENSE.md"
+categories = ["web-programming"]
+include = [
+		"src/**/*.rs",
+		"Cargo.toml"
+]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2.0.0", features = ["full"] }
+quote = "1.0"

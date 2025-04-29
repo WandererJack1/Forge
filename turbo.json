@@ -1,0 +1,28 @@
+{
+  "$schema": "./node_modules/turbo/schema.json",
+  "globalDependencies": ["eslint.config.js"],
+  "tasks": {
+    "lint": {
+      "dependsOn": ["^build"]
+    },
+    "format": {},
+    "format:fix": {},
+    "typecheck": {
+      "dependsOn": ["^build"],
+      "outputLogs": "new-only"
+    },
+    "test": {
+      "dependsOn": ["^build"]
+    },
+    "test:watch": {},
+    "build": {
+      "outputs": ["dist/**"],
+      "dependsOn": ["^build"],
+      "outputLogs": "new-only"
+    },
+    "dev": {
+      "dependsOn": ["^build"],
+      "outputLogs": "new-only"
+    }
+  }
+}

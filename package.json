@@ -1,0 +1,42 @@
+{
+  "name": "workspace",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.7.1+sha512.2d92c86b7928dc8284f53494fb4201f983da65f0fb4f0d40baafa5cf628fa31dae3e5968f12466f17df7e97310e30f343a648baea1b9b350685dafafffdf5808",
+  "scripts": {
+    "dev": "turbo dev --filter=./devtools/* --filter=./packages/*",
+    "build": "turbo build --filter=./devtools/* --filter=./packages/*",
+    "lint": "turbo lint --filter=./devtools/* --filter=./packages/*",
+    "format:fix": "turbo format:fix --filter=./devtools/* --filter=./packages/*",
+    "format": "turbo format --filter=./devtools/* --filter=./packages/*",
+    "typecheck": "turbo typecheck --filter=./devtools/* --filter=./packages/*",
+    "test": "turbo test --filter=./devtools/* --filter=./packages/*",
+    "test:watch": "turbo test:watch --filter=./devtools/* --filter=./packages/*",
+    "test:e2e": "pnpm --filter \"./e2e/fixtures/*\" run test:e2e",
+    "examples:format": "prettier ./examples/** --check",
+    "examples:format:fix": "prettier ./examples/** --write",
+    "examples:typecheck": "pnpm --filter \"./examples/*\" exec tsc --noEmit",
+    "repo:root:format": "prettier . !./assets !./crates !./examples !./devtools !./packages --check",
+    "repo:root:format:fix": "prettier . !./assets !./crates !./examples !./devtools !./packages --write",
+    "check-packages": "turbo build test lint format typecheck --filter=!./examples",
+    "check-examples": "pnpm run \"/^examples:(format|typecheck)$/\"",
+    "check-all": "pnpm run check-packages && pnpm run check-examples && pnpm run repo:root:format"
+  },
+  "author": "Valerio Ageno",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "9.24.0",
+    "@playwright/test": "1.51.1",
+    "@types/node": "22.14.1",
+    "@vitest/eslint-plugin": "1.1.42",
+    "eslint": "9.24.0",
+    "eslint-import-resolver-typescript": "4.3.2",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-react": "7.37.5",
+    "eslint-plugin-react-hooks": "5.2.0",
+    "prettier": "3.5.3",
+    "turbo": "2.5.0",
+    "typescript": "5.7.3",
+    "typescript-eslint": "8.29.1"
+  }
+}

@@ -1,0 +1,27 @@
+services:
+  TheMill:
+    platform: linux/amd64
+    container_name: TheMill-source-container
+    hostname: TheMill-source-container
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+      args:
+        RUST_VERSION: 1.83 # if change, think to update the default ARGs in Dockerfile
+        BASE_OS: bookworm # if change, think to update the default ARGs in Dockerfile
+    image: TheMill-source-image
+    ports:
+      - '3000:3000' # expose default port used by TheMill server
+    volumes: # mount the project into a volume but node_modules / .pnpm-store / target / ... directories won't by sync from container to host
+      - ..:/TheMill
+      - /TheMill/node_modules
+      - /TheMill/target
+      - /TheMill/.pnpm-store
+      - /TheMill/.turbo
+      - /TheMill/examples/TheMill-app/node_modules
+      - /TheMill/examples/TheMill-app/target
+      - /TheMill/examples/TheMill-tutorial/node_modules
+      - /TheMill/examples/TheMill-tutorial/target
+      - /TheMill/examples/with-mdx/node_modules
+      - /TheMill/examples/with-mdx/target
+    tty: true

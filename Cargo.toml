@@ -1,0 +1,15 @@
+[workspace]
+resolver = "2"
+members = [
+  "crates/TheMill", 
+  "crates/TheMill_internal", 
+  "crates/TheMill_lib", 
+  "crates/TheMill_lib_macros"
+]
+exclude = [
+  "examples/with-mdx",
+  "examples/TheMill-app",
+  "examples/TheMill-tutorial",
+  "examples/with-tailwind",
+  "e2e/fixtures/base",
+]
