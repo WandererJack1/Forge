@@ -14,11 +14,11 @@ If you have experience with [Next.js](https://nextjs.org/) you will feel home he
 
 Some of its features are:
 
-- 🟦 Native Typescript
-- 🌐 Next.js like Routing
-- 🍭 CSS/SCSS modules
-- 🧬 Server Side Rendering
-- 🔥 Hot Module Reload
+-  Native Typescript
+-  Next.js like Routing
+-  CSS/SCSS modules
+-  Server Side Rendering
+-  Hot Module Reload
 
 ## Installation
 
