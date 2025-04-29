@@ -9,5 +9,4 @@ path = ".TheMill/main.rs"
 
 [dependencies]
 TheMill_lib = { path = "../../crates/TheMill_lib/" }
-serde = { version = "1.0.202", features = ["derive"] }
 
