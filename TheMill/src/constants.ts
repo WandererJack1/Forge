@@ -1,0 +1,1 @@
+export const SERVER_PAYLOAD_VARIABLE_NAME = '__TheMill_SERVER_PAYLOAD__'

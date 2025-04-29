@@ -1,0 +1,101 @@
+{
+  "name": "TheMill",
+  "version": "0.19.4",
+  "description": "Superfast React fullstack framework",
+  "homepage": "https://TheMill.dev",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "lint": "eslint .",
+    "format": "prettier --check --ignore-unknown --ignore-path ../../.prettierignore .",
+    "format:fix": "prettier --write --ignore-unknown --ignore-path ../../.prettierignore .",
+    "typecheck": "tsc --noEmit",
+    "test:watch": "vitest",
+    "test": "vitest run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheJackMan33/TheMill.git",
+    "directory": "packages/TheMill"
+  },
+  "type": "module",
+  "types": "dist/esm/index.d.ts",
+  "main": "dist/esm/index.js",
+  "module": "dist/esm/index.js",
+  "exports": {
+    "./build": {
+      "types": "./dist/esm/build/index.d.ts",
+      "default": "./dist/esm/build/index.js"
+    },
+    "./build-client": {
+      "types": "./dist/esm/build-client/index.d.ts"
+    },
+    "./config": {
+      "types": "./dist/esm/config/index.d.ts",
+      "default": "./dist/esm/config/index.js"
+    },
+    "./ssr": {
+      "types": "./dist/esm/ssr/index.d.ts",
+      "default": "./dist/esm/ssr/index.js"
+    },
+    "./hydration": {
+      "types": "./dist/esm/hydration/index.d.ts",
+      "default": "./dist/esm/hydration/index.js"
+    },
+    ".": {
+      "types": "./dist/esm/index.d.ts",
+      "default": "./dist/esm/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "TheMill-dev-ssr": "./bin/dev-ssr.js",
+    "TheMill-dev-watch": "./bin/watch.js",
+    "TheMill-build-prod": "./bin/build-prod.js",
+    "TheMill-build-config": "./bin/build-config.js"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "bin/**"
+  ],
+  "peerDependencies": {
+    "react": ">=19.0.0",
+    "react-dom": ">=19.0.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/plugin-syntax-jsx": "^7.24.1",
+    "@babel/plugin-syntax-typescript": "^7.24.1",
+    "@rollup/plugin-inject": "^5.0.5",
+    "@vitejs/plugin-react-swc": "^3.8.0",
+    "fast-text-encoding": "^1.0.6",
+    "TheMill-react-vite-plugin": "workspace:*",
+    "TheMill-router": "workspace:*",
+    "url-search-params-polyfill": "^8.2.5",
+    "vite": "^6.1.1",
+    "web-streams-polyfill": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/babel__core": "7.20.5",
+    "@types/babel__traverse": "7.20.7",
+    "@types/node": "22.14.1",
+    "@types/react": "19.1.1",
+    "@types/react-dom": "19.1.2",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "vite-config": "workspace:*",
+    "vitest": "3.1.1"
+  },
+  "sideEffects": false,
+  "keywords": [
+    "react",
+    "typescript",
+    "fullstack",
+    "framework",
+    "rust"
+  ],
+  "author": "Valerio Ageno",
+  "license": "MIT"
+}
