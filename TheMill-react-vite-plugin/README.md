@@ -1,10 +1,10 @@
-# TheMill-fs-router-vite-plugin
+# Forge-fs-router-vite-plugin
 
-This is a vite plugin for [TheMill](https://github.com/TheJackMan33/TheMill).
+This is a vite plugin for [TheMill](https://github.com/TheJackMan33/Forge).
 
 This package specifically handles the file system based routing.
 
-Check [TheMill](https://github.com/TheJackMan33/TheMill) for more.
+Check [TheMill](https://github.com/TheJackMan33/Forge) for more.
 
 ## Credits
 
