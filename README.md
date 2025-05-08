@@ -1,10 +1,10 @@
-# TheMill
+# Forge
 
 
-![](https://github.com/TheJackMan33/TheMill/actions/workflows/rust.yml/badge.svg)
-![](https://github.com/TheJackMan33/TheMill/actions/workflows/typescript.yml/badge.svg)
+![](https://github.com/TheJackMan33/Forge/actions/workflows/rust.yml/badge.svg)
+![](https://github.com/TheJackMan33/Forge/actions/workflows/typescript.yml/badge.svg)
 
-**TheMill is a full-stack web framework for building React applications using Rust as the backend with
+**Forge is a full-stack web framework for building React applications using Rust as the backend with
 a strong focus on usability and performance.**
 
 The Mill Project
@@ -25,7 +25,7 @@ Some of its features are:
 Available on MacOS, Linux and Windows.
 
 ```sh
-cargo install TheMill
+cargo install Forge
 ```
 
 ## Getting started
@@ -33,15 +33,15 @@ cargo install TheMill
 Create a new project with:
 
 ```sh
-TheMill new [PROJECT_NAME]
+Forge new [PROJECT_NAME]
 ```
 
-> You can optionally pass the --template (or -t) flag to directly start from a [template](https://github.com/TheJackMan33/TheMill/tree/main/examples)
+> You can optionally pass the --template (or -t) flag to directly start from a [template](https://github.com/TheJackMan33/Forge/tree/main/examples)
 
 Now just install the dependencies with you favourite JS package manager (i.e. `npm install`) and start the development environment
 
 ```sh
-TheMill dev
+Forge dev
 ```
 
 
