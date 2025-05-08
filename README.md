@@ -8,6 +8,7 @@
 a strong focus on usability and performance.**
 
 The Forge Project
+
 Why Forge? Because we are grinding complexity into modern simplicity.
 
 If you have experience with [Next.js](https://nextjs.org/) you will feel home here.
