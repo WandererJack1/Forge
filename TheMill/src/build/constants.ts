@@ -1,5 +1,0 @@
-export const DOT_TheMill_FOLDER_NAME = '.TheMill'
-export const CONFIG_FOLDER_NAME = 'config'
-export const CONFIG_FILE_NAME = 'config.mjs'
-export const SERVER_CONFIG_NAME = 'config.json'
-export const ENV_PREFIX = 'TheMill_PUBLIC_'
